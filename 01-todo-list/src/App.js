@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import TodoList from "./TodoList";
 import { v4 as uuidv4 } from "uuid"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
@@ -44,12 +46,14 @@ function App() {
 
   return (
     <>
+      <h1><FontAwesomeIcon icon={icon({name: 'list-check'})} /> My Todo List</h1>
+      <h3>List 1</h3>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input ref={todoNameRef} type="text" />
-      <button onClick={handleAddTodo}>Add Todo</button>
+      <input ref={todoNameRef} type="text" placeholder="Add a todo..."/>
+      <button id="fa-icon-beat" onClick={handleAddTodo}><FontAwesomeIcon icon={icon({name: 'plus'})} /></button>
       <button onClick={handleClearComplete}>Clear Complete</button>
       <button onClick={handleClearAll}>Clear All</button>
-      <div>{todos.filter(todo => !todo.isComplete).length} left Todo!</div>
+      <div className="moti-text">{todos.filter(todo => !todo.isComplete).length} left Todo!</div>
     </>
   );
 }

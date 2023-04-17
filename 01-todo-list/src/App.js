@@ -46,14 +46,20 @@ function App() {
 
   return (
     <>
-      <h1><FontAwesomeIcon icon={icon({name: 'list-check'})} /> My Todo List</h1>
-      <h3>List 1</h3>
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input ref={todoNameRef} type="text" placeholder="Add a todo..."/>
-      <button id="fa-icon-beat" onClick={handleAddTodo}><FontAwesomeIcon icon={icon({name: 'plus'})} /></button>
-      <button onClick={handleClearComplete}>Clear Complete</button>
-      <button onClick={handleClearAll}>Clear All</button>
-      <div className="moti-text">{todos.filter(todo => !todo.isComplete).length} left Todo!</div>
+      <header>
+        <h1><FontAwesomeIcon icon={icon({name: 'list-check'})} /> My Todo List</h1>
+      </header>
+      <div>
+        <h3>List 1</h3>
+        <TodoList todos={todos} toggleTodo={toggleTodo} />
+        <input ref={todoNameRef} type="text" placeholder="Add a todo..."/>
+        <button id="fa-icon-beat" onClick={handleAddTodo}><FontAwesomeIcon icon={icon({name: 'plus'})} /></button>
+        <button onClick={handleClearComplete}>Clear Complete</button>
+        <button onClick={handleClearAll}>Clear All</button>
+        <div className="moti-text">
+          {todos.filter(todo => !todo.isComplete).length} left Todo!
+        </div>
+      </div>
     </>
   );
 }

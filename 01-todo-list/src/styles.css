@@ -6,3 +6,7 @@
   font-style: italic;
   font-size: small;
 }
+
+.strike {
+  text-decoration: line-through;
+}

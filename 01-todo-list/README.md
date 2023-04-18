@@ -6,4 +6,4 @@ Current status:
 
 - Completed tutorial, basic functionality implemented.
 
-![screenshot](ss_0604.jpg)
+![screenshot](ss_2104.jpg)

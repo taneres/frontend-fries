@@ -52,10 +52,12 @@ function App() {
       <div>
         <h3>List 1</h3>
         <TodoList todos={todos} toggleTodo={toggleTodo} />
-        <input ref={todoNameRef} type="text" placeholder="Add a todo..."/>
-        <button id="fa-icon-beat" onClick={handleAddTodo}><FontAwesomeIcon icon={icon({name: 'plus'})} /></button>
-        <button onClick={handleClearComplete}>Clear Complete</button>
-        <button onClick={handleClearAll}>Clear All</button>
+        <div className="input-m-box">
+          <input className="input-m" ref={todoNameRef} type="text" placeholder="Add a todo..."/>
+          <button className="input-m" onClick={handleAddTodo} title="Add an item"><FontAwesomeIcon icon={icon({name: 'plus'})} /></button>
+          <button className="input-m input-m-broom" onClick={handleClearComplete} title="Clear all completed items"><FontAwesomeIcon icon={icon({name: 'broom'})} /></button>
+          <button className="input-m input-m-trash" onClick={handleClearAll} title="Clear all items"><FontAwesomeIcon icon={icon({name: 'trash'})} /></button>
+        </div>
         <div className="moti-text">
           {todos.filter(todo => !todo.isComplete).length} left Todo!
         </div>

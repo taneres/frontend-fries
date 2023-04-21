@@ -7,7 +7,7 @@ function Todo({ todo, toggleTodo }) {
     <div>
       <label>
         <input type="checkbox" checked={todo.isComplete} onChange={handleTodoClick} />
-        {todo.name}
+        <span className={todo.isComplete ? "strike" : ""}>{todo.name}</span>
       </label>
     </div>
   );

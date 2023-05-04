@@ -38,7 +38,7 @@ function ExpenseForm(props) {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmt,
+      amount: +enteredAmt,
       date: new Date(enteredDate),
     };
 
@@ -46,6 +46,8 @@ function ExpenseForm(props) {
     setEnteredTitle("");
     setEnteredAmt("");
     setEnteredDate("");
+
+    props.cancelHandler();
   };
 
   const shortDate = new Intl.DateTimeFormat("en-CA", {
@@ -85,6 +87,7 @@ function ExpenseForm(props) {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button onClick={props.cancelHandler}>Cancel</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>

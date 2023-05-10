@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
+  border: 5px solid black;
+  position: relative;
+}
+
+h2 {
+  font-weight: 800;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+
+h3 {
+  /* padding: 20px 0; */
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* text-align: center; */
+  /* width: 60px; */
+  display: inline-block;
+  padding: 7px 15px;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  font-size: 12px;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.descr {
+  margin-bottom: 10px;
+}
+
+.more-info-link {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.more-info-link:link, .more-info-link:visited {
+  color: black;
+}
+
+.more-info-link:hover, .more-info-link:active {
+  text-decoration: none;
+}
+
+/* .colors {
+  margin-top: 30px;
+  height: 20px;
+  position: relative;
+}  */
+
+.color {
+  width: 22px;
+  height: 22px;
+  /* position: absolute; */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-1 {
+  background-color: #000;
+  /* left: 0; */
+}
+
+.color-2 {
+  background-color: #2f6ee2;
+  /* left: 30px; */
+}
+
+.color-3 {
+  background-color: #ec2f2f;
+  /* left: 60px; */
+}
+
+.color-4 {
+  background-color: #f0bf1e;
+  /* left: 90px; */
+}
+
+.color-5 {
+  background-color: #90cc20;
+  /* left: 120px; */
+}
+
+.color-6 {
+  background-color: #885214;
+  /* left: 150px; */
+}
+
+.details-list {
+  list-style-type: square;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.details-list li:last-child {
+  margin-bottom: 0;
+}
+
+.add-cart {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  border-top: 5px solid black;
+}
+
+.add-cart:hover {
+  background-color: white;
+  color: black;
+}

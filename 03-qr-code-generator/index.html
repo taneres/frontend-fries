@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js" defer></script>
+    <title>Vanilla QR Code Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vanilla QR Code Generator</h1>
+      <!-- <label for="input-text">Enter the text to be encoded...</label> -->
+      <input
+        type="text"
+        name="input-text"
+        class="input-text"
+        placeholder="Enter the text to be encoded..."
+      />
+      <button class="gen-btn" type="submit">GENERATE!</button>
+      <div class="qr-code" style="display: none"></div>
+      <button class="dl-btn" style="display: none"><a download="qr_code.png" href="">Download <i class="fa-solid fa-download"></i></a>
+      </button>
+    </div>
+  </body>
+</html>

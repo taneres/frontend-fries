@@ -22,14 +22,9 @@ body {
   485 / 2 = 242px
  */
 
-.cols {
-  display: flex;
-  gap: 40px;
-}
-
-/* .col-1 {
+.col-1 {
   float: left;
-} */
+}
 
 /*
   NOTE:
@@ -41,19 +36,17 @@ body {
 }
 
 .col-2 {
-  /* float: left; */
-  /* width: 242px; */
-  /* margin-left: 40px; */
+  float: left;
+  width: 242px;
+  margin-left: 40px;
   margin-top: 20px;
-  flex: 1;
 }
 
 .col-3 {
-  /* float: left; */
-  /* width: 242px; */
-  /* margin-left: 40px; */
+  float: left;
+  width: 242px;
+  margin-left: 40px;
   margin-top: 20px;
-  flex: 1;
 }
 
 h2 {
@@ -101,30 +94,23 @@ h3 {
   left: -38px;
 }
 
-.ps-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .price {
   font-size: 24px;
-  /* float: left; */
+  float: left;
 }
 
 .shipping {
   font-size: 12px;
   font-weight: bold;
   color: #777;
-  /* margin-bottom: 20px; */
-  /* float: right; */
-  /* margin-top: 8px; */
+  margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
 }
 
 .descr {
   margin-bottom: 10px;
-  /* clear: both; */
+  clear: both;
 }
 
 .more-info-link {
@@ -146,17 +132,12 @@ h3 {
   position: relative;
 }  */
 
-.colors {
-  display: flex;
-  gap: 10px;
-}
-
 .color {
   width: 22px;
   height: 22px;
   /* position: absolute; */
   display: inline-block;
-  /* margin-right: 10px; */
+  margin-right: 10px;
 }
 
 .color-1 {

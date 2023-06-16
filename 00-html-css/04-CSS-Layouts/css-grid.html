@@ -36,13 +36,48 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr auto; */
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: 300px 200px; */
+        grid-template-rows: 1fr 1fr;
+        height: 500px;
+
+        /* gap: 30px; */
+        column-gap: 20px;
+        row-gap: 40px;
+
+        /* TEMP */
+        display: none;
+      }
+
+      .el--8 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        /* grid-row: 1 / -1; */
+      }
+
+      .el--2 {
+        /*
+          can omit behind if only 1 diff ; 1 / 2 => 1
+          1 / span 3 => start at 1, span 3 cells aka 1 / 4
+          to span whole grid width => 1 / -1 aka 1 / span 4
+        */
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+      }
+
+      .el--6 {
+        /* grid-row: 3 / 5; */
       }
 
       .container--2 {
+        /* display: none; */
+
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -53,6 +88,30 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /*
+          Aligning tracks INSIDE container:
+          distribute empty space
+        */
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+
+        /*
+          Aligning items INSIDE cells:
+          moving items around inside cells
+        */
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
@@ -64,7 +123,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 

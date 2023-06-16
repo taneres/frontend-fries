@@ -27,7 +27,7 @@ body {
   /* padding-left: 40px; */
   /* padding-right: 40px; */
   padding: 20px 40px;
-  /* margin-bottom: 60px; */
+  margin-bottom: 60px;
   /* height: 80px; */
 }
 
@@ -77,9 +77,9 @@ nav a:link:last-child {
   margin-right: 0;
 }
 
-/* article {
+article {
   margin-bottom: 60px;
-} */
+}
 
 aside {
   background-color: #f7f7f7;
@@ -380,9 +380,7 @@ footer {
   font-style: italic;
 }
 
-/* FLEXBOX LAYOUT */
-
-/* .row {
+.row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -390,42 +388,15 @@ footer {
 }
 
 article {
-  flex: 1; // 0 0 825px // don't need to calculate with flexbox, let it grow
+  flex: 1; /* 0 0 825px // don't need to calculate with flexbox, let it grow */
   margin-bottom: 0;
 }
 
 aside {
-  // DEFAULTS:
+  /* DEFAULTS:
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: auto; //
+    flex-basis: auto;
+  */
   flex: 0 0 300px;
-} */
-
-/* -- CSS GRID -- */
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  /* NOTE: btr to use gaps than margins as it's easier to maintain */
-  column-gap: 75px;
-  row-gap: 60px;
-  align-items: start;
-}
-
-.main-header {
-  grid-column: 1 / -1;
-}
-
-article {
-
-}
-
-aside {
-
-}
-
-footer {
-  /* background-color: red; */
-  grid-column: 1 / -1;
 }
